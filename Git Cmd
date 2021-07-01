@@ -1,0 +1,60 @@
+This is my first file on repo
+Commands used in GIT:
+sudo -i
+
+once you become a root user
+to install git
+ 7  yum install git
+    8  git --version
+    9  history
+    
+    How to intialize and directory using git
+     10  mkdir project
+   11  cd project/
+   12  touch DS_Store
+   13  touch calcy.py
+   14  touch auth
+   15  git status
+the might .git
+ 18  git status
+   19  git init
+   20  git status
+   21  history
+   24  cd .git
+   28  git status
+   29  rm -rf .git
+   30  git status
+   31  git init
+   32  git status
+   
+   create our first commit
+      38  git config --global user.email "gopal1409@gmail.com"
+   39  git commit -m "intial commit"
+35  git add calcy.py
+   36  git commit -m "my first commit"
+   37  git config --global user.name "gopal"
+
+   40  git log
+
+Changes
+45  vi calcy.py
+   46  git status
+   47  git add calcy.py
+   48  git commit -m "second commit"
+   49  git log
+   50  vi calcy.py
+   51  git status
+   52  git diff
+   
+   git mistake rectify using checkout
+   75  vi calcy.py
+   76  git status
+   77  git diff
+   78  git checkout calcy.py
+   79  git diff
+
+stop tracking unnecessary file
+100  git reset
+  101  git status
+  102  vi .gitignore
+  103  git status
